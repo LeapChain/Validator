@@ -51,6 +51,7 @@ incremental==21.3.0       # via twisted
 iniconfig==1.1.1          # via pytest
 iptools==0.7.0            # via thenewboston
 kombu==4.6.11             # via celery
+leapchain==0.2.6          # via -r requirements/base.in
 lupa==1.9                 # via fakeredis
 mccabe==0.6.1             # via flake8
 msgpack==0.6.2            # via channels-redis
@@ -88,7 +89,6 @@ sortedcontainers==2.3.0   # via fakeredis
 sqlparse==0.4.1           # via django, django-debug-toolbar
 tblib==1.7.0              # via -r requirements/base.in
 text-unidecode==1.3       # via faker
-thenewboston==0.2.3       # via -r requirements/base.in
 toml==0.10.2              # via pytest
 tornado==6.1              # via flower
 twisted[tls]==21.2.0      # via daphne
