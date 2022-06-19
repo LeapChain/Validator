@@ -1,14 +1,14 @@
 import logging
 
 from sentry_sdk import capture_exception
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import fetch, post
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.format import format_address
+from leapchain.utils.network import fetch, post
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 from v1.self_configurations.helpers.signing_key import get_signing_key
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def connect_to_primary_validator(*, primary_validator):

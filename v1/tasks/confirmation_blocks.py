@@ -2,14 +2,14 @@ import logging
 
 from django.core.cache import cache
 from sentry_sdk import capture_exception
-from thenewboston.utils.messages import get_message_hash
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.messages import get_message_hash
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.cache_tools.cache_keys import HEAD_BLOCK_HASH
 from v1.self_configurations.helpers.signing_key import get_signing_key
 from .helpers import format_updated_balances
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def sign_block_to_confirm_and_update_head_block_hash(*, block, existing_accounts, new_accounts):

@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from django.core.validators import MaxValueValidator
 from django.db import models
-from thenewboston.constants.network import BALANCE_LOCK_LENGTH, MAX_POINT_VALUE, VERIFY_KEY_LENGTH
+from leapchain.constants.network import BALANCE_LOCK_LENGTH, MAX_POINT_VALUE, VERIFY_KEY_LENGTH
 
 
 class Account(models.Model):

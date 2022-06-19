@@ -1,5 +1,5 @@
 from factory import Faker
-from thenewboston.factories.network_validator import NetworkValidatorFactory
+from leapchain.factories.network_validator import NetworkValidatorFactory
 
 from ..models.validator import Validator
 

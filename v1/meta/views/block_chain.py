@@ -1,6 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from thenewboston.utils.messages import get_message_hash
+from leapchain.utils.messages import get_message_hash
 
 from v1.cache_tools.valid_confirmation_blocks import get_valid_confirmation_block
 from ..helpers.block_identifier import get_initial_block_identifier

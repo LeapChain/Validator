@@ -3,7 +3,7 @@ from django.utils.decorators import classonlymethod
 from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK
 from rest_framework.viewsets import ViewSet
-from thenewboston.constants.network import CONFIRMATION_VALIDATOR
+from leapchain.constants.network import CONFIRMATION_VALIDATOR
 
 from v1.decorators.nodes import is_self_signed_message
 from v1.self_configurations.helpers.self_configuration import get_self_configuration

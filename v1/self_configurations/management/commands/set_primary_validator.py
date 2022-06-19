@@ -1,4 +1,4 @@
-from thenewboston.base_classes.fetch_primary_validator_config import FetchPrimaryValidatorConfig
+from leapchain.base_classes.fetch_primary_validator_config import FetchPrimaryValidatorConfig
 
 from v1.tasks.sync_with_primary_validator import sync_with_primary_validator
 

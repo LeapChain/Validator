@@ -1,6 +1,6 @@
 from django.core.cache import cache
 from rest_framework import serializers
-from thenewboston.constants.clean import (
+from leapchain.constants.clean import (
     CLEAN_COMMAND_START,
     CLEAN_COMMAND_STOP,
     CLEAN_STATUS_CLEANING,

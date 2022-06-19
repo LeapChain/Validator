@@ -4,9 +4,9 @@ from celery import shared_task
 from django.core.cache import cache
 from django.utils import timezone
 from sentry_sdk import capture_exception
-from thenewboston.constants.crawl import CRAWL_STATUS_NOT_CRAWLING, CRAWL_STATUS_STOP_REQUESTED
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import fetch
+from leapchain.constants.crawl import CRAWL_STATUS_NOT_CRAWLING, CRAWL_STATUS_STOP_REQUESTED
+from leapchain.utils.format import format_address
+from leapchain.utils.network import fetch
 
 from v1.banks.models.bank import Bank
 from v1.cache_tools.cache_keys import CRAWL_LAST_COMPLETED, CRAWL_STATUS
@@ -21,7 +21,7 @@ from v1.validators.helpers.validator_configuration import (
 )
 from v1.validators.models.validator import Validator
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def create_banks(*, known_nodes, results):

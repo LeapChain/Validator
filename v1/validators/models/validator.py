@@ -1,6 +1,6 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-from thenewboston.models.network_validator import NetworkValidator
+from leapchain.models.network_validator import NetworkValidator
 
 
 class Validator(NetworkValidator):

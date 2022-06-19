@@ -1,8 +1,8 @@
 import pytest
 from nacl.encoding import HexEncoder
 from nacl.signing import SigningKey
-from thenewboston.utils.messages import get_message_hash
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.messages import get_message_hash
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.meta.helpers.block_identifier import get_initial_block_identifier
 

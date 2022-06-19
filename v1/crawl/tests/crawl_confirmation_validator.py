@@ -2,14 +2,14 @@ import pytest
 from django.core.cache import cache
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from thenewboston.constants.crawl import (
+from leapchain.constants.crawl import (
     CRAWL_COMMAND_START,
     CRAWL_COMMAND_STOP,
     CRAWL_STATUS_CRAWLING,
     CRAWL_STATUS_NOT_CRAWLING,
     CRAWL_STATUS_STOP_REQUESTED
 )
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.cache_tools.cache_keys import CRAWL_LAST_COMPLETED, CRAWL_STATUS
 from v1.self_configurations.helpers.signing_key import get_signing_key

@@ -1,6 +1,6 @@
 from factory import Faker
 from factory.django import DjangoModelFactory
-from thenewboston.constants.network import BALANCE_LOCK_LENGTH, MAX_POINT_VALUE, VERIFY_KEY_LENGTH
+from leapchain.constants.network import BALANCE_LOCK_LENGTH, MAX_POINT_VALUE, VERIFY_KEY_LENGTH
 
 from ..models.account import Account
 

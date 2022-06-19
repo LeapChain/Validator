@@ -9,9 +9,9 @@ services:
   db:
     image: postgres:12-alpine
     environment:
-      - POSTGRES_DB=thenewboston_pv
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_pv
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - C_FORCE_ROOT=true
     volumes:
       - postgresql-data:/var/lib/postgresql/data
@@ -29,9 +29,9 @@ services:
       - REDIS_DB=0
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_pv
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_pv
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     env_file:
       - .env
@@ -60,9 +60,9 @@ services:
       - REDIS_DB=1
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_cv1
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_cv1
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     env_file:
       - .env
@@ -93,9 +93,9 @@ services:
       - REDIS_DB=2
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_cv2
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_cv2
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     env_file:
       - .env
@@ -124,9 +124,9 @@ services:
       - REDIS_DB=3
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_bank
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_bank
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     env_file:
       - .env
@@ -152,9 +152,9 @@ services:
       - REDIS_DB=0
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_pv
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_pv
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     command: celery -A config.settings worker -l debug -Q celery,block_queue,confirmation_block_queue
     volumes:
@@ -177,9 +177,9 @@ services:
       - REDIS_DB=1
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_cv1
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_cv1
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     command: celery -A config.settings worker -l debug -Q celery,block_queue,confirmation_block_queue
     volumes:
@@ -202,9 +202,9 @@ services:
       - REDIS_DB=2
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_cv2
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_cv2
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     command: celery -A config.settings worker -l debug -Q celery,block_queue,confirmation_block_queue
     volumes:
@@ -225,9 +225,9 @@ services:
       - REDIS_DB=3
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
-      - POSTGRES_DB=thenewboston_bank
-      - POSTGRES_USER=thenewboston
-      - POSTGRES_PASSWORD=thenewboston
+      - POSTGRES_DB=leapchain_bank
+      - POSTGRES_USER=leapchain
+      - POSTGRES_PASSWORD=leapchain
       - SECRET_KEY=somesecret
     command: celery -A config.settings worker -l debug
     links:

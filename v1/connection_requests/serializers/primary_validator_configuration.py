@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from thenewboston.constants.network import PRIMARY_VALIDATOR
-from thenewboston.serializers.primary_validator import PrimaryValidatorSerializer
+from leapchain.constants.network import PRIMARY_VALIDATOR
+from leapchain.serializers.primary_validator import PrimaryValidatorSerializer
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 from v1.self_configurations.serializers.self_configuration import SelfConfigurationSerializer

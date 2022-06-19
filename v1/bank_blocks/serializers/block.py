@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from thenewboston.constants.network import PRIMARY_VALIDATOR
-from thenewboston.serializers.network_block import NetworkBlockSerializer
-from thenewboston.transactions.validation import validate_transaction_exists
+from leapchain.constants.network import PRIMARY_VALIDATOR
+from leapchain.serializers.network_block import NetworkBlockSerializer
+from leapchain.transactions.validation import validate_transaction_exists
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 

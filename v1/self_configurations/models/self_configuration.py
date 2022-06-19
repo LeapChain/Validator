@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.db import models
-from thenewboston.models.network_validator import NetworkValidator
-from thenewboston.utils.fields import common_field_names
+from leapchain.models.network_validator import NetworkValidator
+from leapchain.utils.fields import common_field_names
 
 from v1.constants.models import NODE_TYPE_CHOICES
 from v1.validators.models.validator import Validator

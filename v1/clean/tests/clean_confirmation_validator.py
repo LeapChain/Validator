@@ -2,15 +2,15 @@ import pytest
 from django.core.cache import cache
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from thenewboston.constants.clean import (
+from leapchain.constants.clean import (
     CLEAN_COMMAND_START,
     CLEAN_COMMAND_STOP,
     CLEAN_STATUS_CLEANING,
     CLEAN_STATUS_NOT_CLEANING,
     CLEAN_STATUS_STOP_REQUESTED
 )
-from thenewboston.utils.format import format_address
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.format import format_address
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.banks.models.bank import Bank
 from v1.banks.serializers.bank import BankSerializer
