@@ -24,7 +24,7 @@ In order to prevent multiple confirmation validators from upgrading to primary v
 that multiple CV's view that bank as their most trusted), the bank will send out these request one by one rather than 
 sending out several requests to all CV's simultaneously.
 
-![Upgrade Request Diagram](https://thenewboston.com/static/media/PrimaryValidatorUpgradeRequest.dd29e23e.png)
+![Upgrade Request Diagram](https://theleapchain.com/static/media/PrimaryValidatorUpgradeRequest.dd29e23e.png)
 
 Starting with the most trusted CV and continuing until their current PV is reached, the bank will send out a 
 `/upgrade_request` where the following logic will be performed:
