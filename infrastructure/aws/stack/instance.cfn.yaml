@@ -145,7 +145,7 @@ Resources:
 
         SourceFiles:
           sources:
-            /var/www/validator/source: https://github.com/thenewboston-developers/Validator/tarball/master
+            /var/www/validator/source: https://github.com/LeapChain/Validator/tarball/master
 
         ConfigFiles:
           files:

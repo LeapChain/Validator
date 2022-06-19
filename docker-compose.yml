@@ -115,7 +115,7 @@ services:
       - redis
 
   bank:
-    image: docker.pkg.github.com/thenewboston-developers/bank/bank:latest
+    image: docker.pkg.github.com/LeapChain/bank/bank:latest
     environment:
       - DJANGO_APPLICATION_ENVIRONMENT=local
       - NETWORK_SIGNING_KEY=d2621d30bc323ea35fe1c4fb11b4babb7fd4c1c0593805f011caedf7b7ce0031
@@ -218,7 +218,7 @@ services:
       - redis
 
   celery_bank:
-    image: docker.pkg.github.com/thenewboston-developers/bank/bank:latest
+    image: docker.pkg.github.com/LeapChain/bank/bank:latest
     environment:
       - DJANGO_APPLICATION_ENVIRONMENT=local
       - NETWORK_SIGNING_KEY=d2621d30bc323ea35fe1c4fb11b4babb7fd4c1c0593805f011caedf7b7ce0031
