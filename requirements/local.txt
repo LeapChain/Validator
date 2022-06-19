@@ -57,7 +57,7 @@ iptools==0.7.0            # via leapchain
 jinja2==2.11.3            # via sphinx
 kombu==4.6.11             # via celery
 leapchain==0.2.6          # via -r requirements/base.in
-lupa==1.9                 # via fakeredis
+lupa==1.13                # via fakeredis
 markupsafe==1.1.1         # via jinja2
 mccabe==0.6.1             # via flake8
 msgpack==0.6.2            # via channels-redis
