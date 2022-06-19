@@ -52,7 +52,7 @@ iniconfig==1.1.1          # via pytest
 iptools==0.7.0            # via leapchain
 kombu==4.6.11             # via celery
 leapchain==0.2.6          # via -r requirements/base.in
-lupa==1.9                 # via fakeredis
+lupa==1.13                # via fakeredis
 mccabe==0.6.1             # via flake8
 msgpack==0.6.2            # via channels-redis
 packaging==20.9           # via pytest
