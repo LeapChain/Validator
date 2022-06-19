@@ -33,3 +33,8 @@ def get_queued_confirmation_block_cache_key(*, block_identifier):
 def get_valid_confirmation_block_cache_key(*, block_identifier):
     """Return cache key used for storing valid confirmation blocks"""
     return f'{VALID_CONFIRMATION_BLOCK}:{block_identifier}'
+
+
+def get_account_locked_cache_key(*, account_number):
+    """Return cache key used for storing an accounts locked balance"""
+    return f'account:{account_number}:locked'

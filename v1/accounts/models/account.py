@@ -15,6 +15,12 @@ class Account(models.Model):
         ]
     )
     balance_lock = models.CharField(max_length=BALANCE_LOCK_LENGTH, unique=True)
+    locked = models.PositiveBigIntegerField(
+        default=0,
+        validators=[
+            MaxValueValidator(MAX_POINT_VALUE)
+        ]
+    )
 
     class Meta:
         default_related_name = 'accounts'
@@ -24,4 +30,5 @@ class Account(models.Model):
             f'Account Number: {self.account_number} | '
             f'Balance Lock: {self.balance_lock} | '
             f'Balance: {self.balance} | '
+            f'Locked: {self.locked} | '
         )

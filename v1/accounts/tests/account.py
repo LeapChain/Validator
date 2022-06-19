@@ -26,6 +26,17 @@ def test_account_balance(client, account):
     assert response['balance'] == pytest.approx(account.balance)
 
 
+def test_account_locked(client, account):
+    response = client.get_json(
+        reverse(
+            'account-locked',
+            args=[account.account_number],
+        ),
+        expected=HTTP_200_OK,
+    )
+    assert response['locked'] == pytest.approx(account.locked)
+
+
 def test_account_balance_lock(client, account):
     response = client.get_json(
         reverse(
