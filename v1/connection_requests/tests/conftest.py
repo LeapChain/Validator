@@ -1,8 +1,8 @@
 import pytest
-from thenewboston.accounts.manage import create_account
-from thenewboston.serializers.primary_validator import PrimaryValidatorSerializer
-from thenewboston.utils.format import format_address
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.accounts.manage import create_account
+from leapchain.serializers.primary_validator import PrimaryValidatorSerializer
+from leapchain.utils.format import format_address
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.banks.serializers.bank import BankSerializer
 from v1.validators.serializers.validator import ValidatorSerializer

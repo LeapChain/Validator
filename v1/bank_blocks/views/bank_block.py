@@ -2,7 +2,7 @@ from django.core.cache import cache
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
-from thenewboston.constants.network import PRIMARY_VALIDATOR
+from leapchain.constants.network import PRIMARY_VALIDATOR
 
 from v1.cache_tools.cache_keys import BLOCK_QUEUE, BLOCK_QUEUE_CACHE_LOCK_KEY
 from v1.decorators.nodes import is_signed_bank_block

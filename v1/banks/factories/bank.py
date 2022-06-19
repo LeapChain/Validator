@@ -1,6 +1,6 @@
 import pytz
 from factory import Faker
-from thenewboston.factories.network_node import NetworkNodeFactory
+from leapchain.factories.network_node import NetworkNodeFactory
 
 from ..models.bank import Bank
 

@@ -1,7 +1,7 @@
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK
-from thenewboston.third_party.pytest.asserts import assert_objects_vs_dicts
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.third_party.pytest.asserts import assert_objects_vs_dicts
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.self_configurations.helpers.signing_key import get_signing_key
 

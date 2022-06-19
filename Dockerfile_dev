@@ -14,7 +14,7 @@ RUN set -xe \
     && apk add postgresql-dev postgresql-client curl \
     && pip install --upgrade pip pip-tools \
     && pip install --no-cache-dir -r /requirements.txt \
-    && if [ -f thenewboston.tar.gz ]; then pip install thenewboston.tar.gz; fi \
+    && if [ -f leapchain.tar.gz ]; then pip install leapchain.tar.gz; fi \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /root/.cache
 
 EXPOSE 8000
