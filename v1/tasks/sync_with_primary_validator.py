@@ -5,11 +5,11 @@ from django.conf import settings
 from django.core.cache import cache
 from django.db.models import Q
 from sentry_sdk import capture_exception
-from thenewboston.utils.fields import standard_field_names
-from thenewboston.utils.files import get_file_hash
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import fetch, post
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.fields import standard_field_names
+from leapchain.utils.files import get_file_hash
+from leapchain.utils.format import format_address
+from leapchain.utils.network import fetch, post
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.cache_tools.cache_keys import HEAD_BLOCK_HASH
 from v1.cache_tools.helpers import rebuild_cache
@@ -22,7 +22,7 @@ from v1.sync.helpers import download_root_account_file, sync_accounts_table_to_r
 from v1.sync.serializers.primary_validator_sync import PrimaryValidatorSyncSerializer
 from v1.validators.models.validator import Validator
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def fetch_valid_confirmation_block(*, primary_validator, block_identifier):

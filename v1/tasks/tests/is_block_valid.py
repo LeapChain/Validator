@@ -1,5 +1,5 @@
 import pytest
-from thenewboston.constants.network import BANK, PRIMARY_VALIDATOR
+from leapchain.constants.network import BANK, PRIMARY_VALIDATOR
 
 from v1.self_configurations.helpers.self_configuration import get_self_configuration
 from v1.tasks.block_queue import is_block_valid

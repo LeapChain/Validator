@@ -4,9 +4,9 @@ import logging
 from celery import shared_task
 from django.core.cache import cache
 from sentry_sdk import capture_exception
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import post
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.format import format_address
+from leapchain.utils.network import post
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.banks.helpers.confirmation_services import get_banks_with_active_confirmation_services
 from v1.cache_tools.cache_keys import HEAD_BLOCK_HASH
@@ -24,7 +24,7 @@ from .helpers import (
     update_accounts_table
 )
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 @shared_task

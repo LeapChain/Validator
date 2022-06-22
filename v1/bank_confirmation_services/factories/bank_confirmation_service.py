@@ -1,5 +1,5 @@
 from factory import SubFactory
-from thenewboston.factories.confirmation_service import ConfirmationServiceFactory
+from leapchain.factories.confirmation_service import ConfirmationServiceFactory
 
 from v1.banks.factories.bank import BankFactory
 from ..models.bank_confirmation_service import BankConfirmationService

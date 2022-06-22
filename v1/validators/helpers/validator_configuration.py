@@ -1,4 +1,4 @@
-from thenewboston.utils.fields import standard_field_names
+from leapchain.utils.fields import standard_field_names
 
 from v1.banks.models.bank import Bank
 from v1.validators.models.validator import Validator

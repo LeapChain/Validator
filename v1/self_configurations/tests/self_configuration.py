@@ -1,6 +1,6 @@
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK
-from thenewboston.constants.network import PRIMARY_VALIDATOR
+from leapchain.constants.network import PRIMARY_VALIDATOR
 
 
 def test_self_configuration_get(client, primary_validator_configuration):

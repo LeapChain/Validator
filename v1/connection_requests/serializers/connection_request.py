@@ -1,15 +1,15 @@
 import logging
 
 from rest_framework import serializers
-from thenewboston.constants.network import (
+from leapchain.constants.network import (
     BANK,
     CONFIRMATION_VALIDATOR,
     PRIMARY_VALIDATOR,
     PROTOCOL_CHOICES,
     VERIFY_KEY_LENGTH
 )
-from thenewboston.utils.format import format_address
-from thenewboston.utils.network import fetch
+from leapchain.utils.format import format_address
+from leapchain.utils.network import fetch
 
 from v1.banks.models.bank import Bank
 from v1.self_configurations.models.self_configuration import SelfConfiguration
@@ -21,7 +21,7 @@ from v1.validators.models.validator import Validator
 from .bank_configuration import BankConfigurationSerializer
 from .validator_configuration import ValidatorConfigurationSerializer
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 class ConnectionRequestSerializerCreate(serializers.Serializer):

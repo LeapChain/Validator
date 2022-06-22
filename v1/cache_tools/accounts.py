@@ -1,7 +1,7 @@
 from django.core.cache import cache
 
 from v1.accounts.models.account import Account
-from .cache_keys import get_account_balance_cache_key, get_account_balance_lock_cache_key
+from .cache_keys import get_account_balance_cache_key, get_account_balance_lock_cache_key, get_account_locked_cache_key
 
 
 def get_account_balance(*, account_number):
@@ -30,3 +30,17 @@ def get_account_balance_lock(*, account_number):
             return account.balance_lock
 
     return account_balance_lock
+
+
+def get_account_locked(*, account_number):
+    """Return balance for the given account_number"""
+    account_locked_cache_key = get_account_locked_cache_key(account_number=account_number)
+    account_locked = cache.get(account_locked_cache_key)
+
+    if account_locked is None:
+        account = Account.objects.filter(account_number=account_number).first()
+
+        if account:
+            return account.locked
+
+    return account_locked

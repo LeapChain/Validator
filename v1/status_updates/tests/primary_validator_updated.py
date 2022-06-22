@@ -1,6 +1,6 @@
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
-from thenewboston.utils.signed_requests import generate_signed_request
+from leapchain.utils.signed_requests import generate_signed_request
 
 from v1.banks.helpers.most_trusted import get_most_trusted_bank
 

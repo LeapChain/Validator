@@ -1,6 +1,6 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-from thenewboston.models.network_node import NetworkNode
+from leapchain.models.network_node import NetworkNode
 
 
 class Bank(NetworkNode):

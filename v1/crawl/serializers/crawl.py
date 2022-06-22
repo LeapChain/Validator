@@ -1,6 +1,6 @@
 from django.core.cache import cache
 from rest_framework import serializers
-from thenewboston.constants.crawl import (
+from leapchain.constants.crawl import (
     CRAWL_COMMAND_START,
     CRAWL_COMMAND_STOP,
     CRAWL_STATUS_CRAWLING,

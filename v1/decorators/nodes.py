@@ -5,14 +5,14 @@ from nacl.exceptions import BadSignatureError
 from rest_framework import status
 from rest_framework.response import Response
 from sentry_sdk import capture_exception
-from thenewboston.blocks.signatures import verify_signature
-from thenewboston.constants.errors import BAD_SIGNATURE, ERROR, UNKNOWN
-from thenewboston.utils.tools import sort_and_encode
+from leapchain.blocks.signatures import verify_signature
+from leapchain.constants.errors import BAD_SIGNATURE, ERROR, UNKNOWN
+from leapchain.utils.tools import sort_and_encode
 
 from v1.banks.models.bank import Bank
 from v1.self_configurations.helpers.self_configuration import get_primary_validator, get_self_configuration
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 def is_self_signed_message(func):

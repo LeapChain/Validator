@@ -45,7 +45,7 @@ sdist/
 share/python-wheels/
 var/
 wheels/
-thenewboston.tar.gz
+leapchain.tar.gz
 
 # Unit test / coverage reports
 *.cover

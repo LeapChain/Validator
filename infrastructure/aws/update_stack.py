@@ -8,9 +8,9 @@ from urllib.parse import urlparse
 import boto3
 from django.core.management.utils import get_random_secret_key
 from nacl.encoding import HexEncoder
-from thenewboston.accounts.manage import create_account
-from thenewboston.argparser.validators import int_validator, str_length_validator, url_validator
-from thenewboston.constants.network import BLOCK_IDENTIFIER_LENGTH, CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR, \
+from leapchain.accounts.manage import create_account
+from leapchain.argparser.validators import int_validator, str_length_validator, url_validator
+from leapchain.constants.network import BLOCK_IDENTIFIER_LENGTH, CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR, \
     VERIFY_KEY_LENGTH
 
 if TYPE_CHECKING:

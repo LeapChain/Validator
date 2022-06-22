@@ -3,7 +3,7 @@ from rest_framework.mixins import ListModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
-from v1.cache_tools.accounts import get_account_balance, get_account_balance_lock
+from v1.cache_tools.accounts import get_account_balance, get_account_balance_lock, get_account_locked
 from ..models.account import Account
 from ..serializers.account import AccountSerializer
 
@@ -22,6 +22,8 @@ class AccountViewSet(
       description: Return the balance for the given account
     balance_lock:
       description: Return the balance lock for the given account
+    locked:
+      description: Return the locked balance for the given account
     """
 
     lookup_field = 'account_number'
@@ -39,4 +41,10 @@ class AccountViewSet(
     def balance_lock(self, request, account_number=None):
         return Response({
             'balance_lock': get_account_balance_lock(account_number=account_number)
+        })
+
+    @action(methods=['get'], detail=True)
+    def locked(self, request, account_number=None):
+        return Response({
+            'locked': get_account_locked(account_number=account_number)
         })

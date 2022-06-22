@@ -1,6 +1,6 @@
 import pytest
 from rest_framework import serializers
-from thenewboston.constants.network import CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR
+from leapchain.constants.network import CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR
 
 from ..serializers.confirmation_block_history import ConfirmationBlockHistorySerializer
 from ..serializers.primary_validator_sync import PrimaryValidatorSyncSerializer

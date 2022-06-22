@@ -1,7 +1,7 @@
 import pytest
 from rest_framework.reverse import reverse
 from rest_framework.status import HTTP_200_OK
-from thenewboston.third_party.pytest.asserts import assert_objects_vs_dicts
+from leapchain.third_party.pytest.asserts import assert_objects_vs_dicts
 
 
 def test_accounts_list(client, accounts, django_assert_max_num_queries):
@@ -35,3 +35,15 @@ def test_account_balance_lock(client, account):
         expected=HTTP_200_OK,
     )
     assert response['balance_lock'] == account.balance_lock
+
+
+def test_account_locked(client, account):
+    response = client.get_json(
+        reverse(
+            'account-locked',
+            args=[account.account_number],
+        ),
+        expected=HTTP_200_OK,
+    )
+    assert response['locked'] == pytest.approx(account.locked)
+

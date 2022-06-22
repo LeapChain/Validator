@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
-from thenewboston.constants.errors import ERROR
-from thenewboston.constants.network import CONFIRMATION_VALIDATOR, HEAD_HASH_LENGTH
+from leapchain.constants.errors import ERROR
+from leapchain.constants.network import CONFIRMATION_VALIDATOR, HEAD_HASH_LENGTH
 
 from v1.cache_tools.queued_confirmation_blocks import get_queued_confirmation_block
 from v1.cache_tools.valid_confirmation_blocks import get_valid_confirmation_block

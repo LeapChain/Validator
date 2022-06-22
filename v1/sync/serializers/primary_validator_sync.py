@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thenewboston.constants.network import PRIMARY_VALIDATOR
+from leapchain.constants.network import PRIMARY_VALIDATOR
 
 from v1.validators.models.validator import Validator
 

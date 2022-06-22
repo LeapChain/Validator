@@ -19,9 +19,9 @@ jobs:
       postgres:
         image: postgres:12-alpine
         env:
-          POSTGRES_DB: thenewboston
-          POSTGRES_USER: thenewboston
-          POSTGRES_PASSWORD: thenewboston
+          POSTGRES_DB: leapchain
+          POSTGRES_USER: leapchain
+          POSTGRES_PASSWORD: leapchain
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -51,7 +51,7 @@ jobs:
           DJANGO_APPLICATION_ENVIRONMENT: test
           REDIS_HOST: redis
           POSTGRES_HOST: postgres
-          POSTGRES_DB: thenewboston
-          POSTGRES_USER: thenewboston
-          POSTGRES_PASSWORD: thenewboston
+          POSTGRES_DB: leapchain
+          POSTGRES_USER: leapchain
+          POSTGRES_PASSWORD: leapchain
           SECRET_KEY: somesecret

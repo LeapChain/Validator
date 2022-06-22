@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from thenewboston.constants.network import CONFIRMATION_VALIDATOR
-from thenewboston.serializers.configuration import ConfigurationSerializer
+from leapchain.constants.network import CONFIRMATION_VALIDATOR
+from leapchain.serializers.configuration import ConfigurationSerializer
 
 from .primary_validator_configuration import PrimaryValidatorConfigurationSerializer
 

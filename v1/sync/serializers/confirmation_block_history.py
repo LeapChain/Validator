@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thenewboston.constants.network import PRIMARY_VALIDATOR, VERIFY_KEY_LENGTH
+from leapchain.constants.network import PRIMARY_VALIDATOR, VERIFY_KEY_LENGTH
 
 from v1.cache_tools.valid_confirmation_blocks import get_valid_confirmation_block
 from v1.self_configurations.helpers.self_configuration import get_self_configuration

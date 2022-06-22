@@ -7,16 +7,16 @@ from django.core.management import CommandParser
 from django.core.validators import URLValidator
 from django.db.models import Q
 from sentry_sdk import capture_exception
-from thenewboston.argparser.validators import str_length_validator, url_validator
-from thenewboston.base_classes.initialize_node import InitializeNode
-from thenewboston.constants.network import (
+from leapchain.argparser.validators import str_length_validator, url_validator
+from leapchain.base_classes.initialize_node import InitializeNode
+from leapchain.constants.network import (
     BLOCK_IDENTIFIER_LENGTH,
     CONFIRMATION_VALIDATOR,
     HEAD_HASH_LENGTH,
     PRIMARY_VALIDATOR
 )
-from thenewboston.utils.files import get_file_hash
-from thenewboston.utils.format import format_address
+from leapchain.utils.files import get_file_hash
+from leapchain.utils.format import format_address
 
 from v1.cache_tools.helpers import rebuild_cache
 from v1.cache_tools.valid_confirmation_blocks import delete_all_valid_confirmation_blocks
@@ -40,7 +40,7 @@ Running this script will:
 - rebuild cache
 """
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 class Command(InitializeNode):

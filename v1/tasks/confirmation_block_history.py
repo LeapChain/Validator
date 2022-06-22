@@ -2,13 +2,13 @@ import logging
 
 from celery import shared_task
 from sentry_sdk import capture_exception
-from thenewboston.utils.format import format_address
-from thenewboston.utils.messages import get_message_hash
-from thenewboston.utils.network import post
+from leapchain.utils.format import format_address
+from leapchain.utils.messages import get_message_hash
+from leapchain.utils.network import post
 
 from v1.cache_tools.valid_confirmation_blocks import get_valid_confirmation_block
 
-logger = logging.getLogger('thenewboston')
+logger = logging.getLogger('leapchain')
 
 
 @shared_task

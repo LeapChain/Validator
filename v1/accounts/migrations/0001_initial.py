@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                 ('account_number', models.CharField(max_length=64, unique=True)),
                 ('balance', models.PositiveBigIntegerField(default=0, validators=[django.core.validators.MaxValueValidator(281474976710656)])),
                 ('balance_lock', models.CharField(max_length=64, unique=True)),
+                ('locked', models.PositiveBigIntegerField(default=0, validators=[django.core.validators.MaxValueValidator(281474976710656)])),
             ],
             options={
                 'default_related_name': 'accounts',

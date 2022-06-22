@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.core.files.storage import default_storage
-from thenewboston.utils.format import format_address
+from leapchain.utils.format import format_address
 
 from ..models.self_configuration import SelfConfiguration
 

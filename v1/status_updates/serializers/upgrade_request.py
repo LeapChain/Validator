@@ -1,6 +1,6 @@
 from django.core.cache import cache
 from rest_framework import serializers
-from thenewboston.constants.network import CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR, VERIFY_KEY_LENGTH
+from leapchain.constants.network import CONFIRMATION_VALIDATOR, PRIMARY_VALIDATOR, VERIFY_KEY_LENGTH
 
 from v1.banks.helpers.most_trusted import get_most_trusted_bank
 from v1.banks.models.bank import Bank
