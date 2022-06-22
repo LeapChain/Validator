@@ -24,7 +24,8 @@ def sync_accounts_table_to_root_account_file():
         Account(
             account_number=k,
             balance=v['balance'],
-            balance_lock=v['balance_lock']
+            balance_lock=v['balance_lock'],
+            locked=v['locked']
         ) for k, v in account_data.items()
     ]
     Account.objects.bulk_create(accounts)
