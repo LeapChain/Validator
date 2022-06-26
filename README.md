@@ -298,7 +298,21 @@ python3 manage.py set_primary_validator
 ```
 Network standardized type of node (PRIMARY_VALIDATOR or CONFIRMATION_VALIDATOR)
 ```
-
+Verify everything is working correctly by visiting:
+```
+http://[IP_ADDRESS]/config
+```
+Troubleshooting
+Check the status of the services:
+```
+sudo systemctl status api celery nginx redis
+```
+View the logs:
+```
+sudo journalctl -u api.service
+sudo journalctl -u celery.service
+sudo journalctl -u nginx.service
+```
 ----
 
 ## Windows (without Docker)
