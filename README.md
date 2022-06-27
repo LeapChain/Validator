@@ -18,6 +18,15 @@ sudo add-apt-repository universe
 sudo apt -y update && sudo apt -y upgrade
 sudo apt -y install build-essential libpq-dev nginx postgresql postgresql-contrib python3-pip redis-server
 ```
+If it don't stop getting warnings like below, just restart your node.
+```
+Running kernel seems to be up-to-date.
+No services need to be restarted.
+No containers need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+```
+
 ### Firewall ~
 Enable firewall:
 ```
