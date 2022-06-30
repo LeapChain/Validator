@@ -299,13 +299,13 @@ Initialize validator node:
 ```
 python3 manage.py initialize_validator
 ```
-Or Initialize Confirmation node:
-```
-python3 manage.py set_primary_validator
-```
 ![setup](https://i.gyazo.com/7066c2d47f5e2578674729f3c5078f43.png)
 ```
 Network standardized type of node (PRIMARY_VALIDATOR or CONFIRMATION_VALIDATOR)
+```
+Set the primary validator:
+```
+python3 manage.py set_primary_validator
 ```
 Verify everything is working correctly by visiting:
 ```
